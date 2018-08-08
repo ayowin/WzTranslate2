@@ -21,9 +21,9 @@ public:
     Q_INVOKABLE bool load();
     //更新语言库，deprecated（不推荐使用），如果没有必要插入，则不需要调用这个函数
     Q_INVOKABLE bool updatelibrary(const QString &key,const QString &value);
-    //翻译函数，tr为translate缩写，减少使用过程中的代码复杂度
+    //翻译函数，ts为translate缩写，减少使用过程中的代码复杂度
     //成功返回实际值，失败返回key值
-    Q_INVOKABLE QString tr(const QString &key);
+    Q_INVOKABLE QString ts(const QString &key);
     //关闭并释放内存
     Q_INVOKABLE void close();
     //测试当前语言库的所有输出

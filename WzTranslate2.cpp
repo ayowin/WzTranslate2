@@ -109,9 +109,9 @@ bool WzTranslate2::updatelibrary(const QString &key, const QString &value)
     return true;
 }
 
-QString WzTranslate2::tr(const QString &key)
+QString WzTranslate2::ts(const QString &key)
 {
-    qDebug()<<"WzTranslate2: tr(const QString &key)";
+    qDebug()<<"WzTranslate2: ts(const QString &key)";
 
     if(!isLoaded)
     {
